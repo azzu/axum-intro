@@ -19,7 +19,7 @@ async fn quick_dev() -> Result<()> {
     );
     req_login.await?.print().await?;
 
-    hc.do_get("/hello2/Jeongil").await?.print().await?;
+    // hc.do_get("/hello2/Jeongil").await?.print().await?;
 
     let req_create_ticket = hc.do_post("/api/tickets", json!({
         "title": "Ticket AAA"
